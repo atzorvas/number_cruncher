@@ -25,7 +25,7 @@ describe "Number Cruncher" do
  
   it "should return json" do
     get '/6'
-    last_response.headers['Content-Type'].must_equal 'application/json;charset=utf-8'
+    last_response.headers['Content-Type'].must_equal 'application/json'
   end
  
   it "should return the correct info about 6 as json" do
